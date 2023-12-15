@@ -1,3 +1,58 @@
-<p>你好</p>
-<a href="blog/">我的博客</a>
-<a href="slimefun/">粘液科技发展简易指南</a>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>验证密钥</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color: #f2f2f2;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+		input[type="text"] {
+			padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			font-size: 16px;
+			width: 100%;
+			max-width: 300px;
+			text-align: center;
+		}
+		input[type="submit"] {
+			padding: 10px 20px;
+			border-radius: 20px;
+			border: none;
+			background-color: #4285f4;
+			color: #fff;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.2s ease-in-out;
+		}
+		input[type="submit"]:hover {
+			background-color: #3367d6;
+		}
+	</style>
+</head>
+<body>
+	<form action="index.html">
+		<label for="key">请输入密钥：</label>
+		<input type="text" id="key" name="key" required pattern="123456">
+		<input type="submit" value="验证">
+	</form>
+</body>
+</html>
